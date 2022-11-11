@@ -5,7 +5,7 @@
     <title>Register</title>
 </head>
 <body>
-<form action="/" method="post">
+<form action="/upload" method="post" enctype="multipart/form-data">
     <table>
         <tr>
             <td colspan="2">
@@ -15,6 +15,10 @@
         <tr>
             <td>Name</td>
             <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+            <td>Avatar</td>
+            <td><input type="file" name="avatar"></td>
         </tr>
         <tr>
             <td>Email</td>
